@@ -19,13 +19,42 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="178dp"
-        android:layout_height="29dp"
-        android:text="¿no eres miembro aún"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="¿no eres miembro?"
+        android:textStyle="bold"
         android:textSize="17dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="396dp" />
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="532dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Regístrate ahora"
+        android:textColor="#2196F3"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Contraseña Olvidada"
+        android:textColor="#2196F3"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="634dp" />
 
     <EditText
         android:id="@+id/edit_text_id_email"
@@ -54,5 +83,5 @@
         android:text="@string/log_in"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="328dp" />
+        tools:layout_editor_absoluteY="324dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,5 +16,13 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val registro = findViewById<TextView>(R.id.textView2)
+
+        registro.setOnClickListener {
+            val url = "https://tusitio.com/registro" // Cambia por tu enlace real
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            startActivity(intent)
+        }
+
     }
 }
