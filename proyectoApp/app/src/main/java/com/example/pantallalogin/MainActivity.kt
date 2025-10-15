@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // 🔹 Detecta el clic en "Regístrate ahora"
         val registro = findViewById<TextView>(R.id.textView2)
         registro.setOnClickListener {
             val url = "https://tusitio.com/registro"
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
             startActivity(intent)
+
         }
     }
 }
